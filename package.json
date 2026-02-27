@@ -1,0 +1,19 @@
+{
+  "name": "mern-stack-repo",
+  "version": "1.0.0",
+  "description": "MERN Stack Application - Azure Cloud Deployment",
+  "scripts": {
+    "install:client": "cd client && npm install",
+    "install:server": "cd server && npm install --omit=dev",
+    "build:client": "cd client && npm run build",
+    "postinstall": "npm run install:client && npm run install:server && npm run build:client",
+    "start": "cd server && node index.js",
+    "dev": "cd server && npm run dev"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
